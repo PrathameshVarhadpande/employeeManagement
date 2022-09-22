@@ -1,0 +1,24 @@
+<app-admin *ngIf="componentVisibility"></app-admin>
+
+<div class="container mt-5">
+  <table class="table table-hover mb-5">
+    <thead class="text-center">
+      <tr class="table-info">
+        <td>Employee No</td>
+        <td>Name</td>
+        <td>Email Id</td>
+        <td>Contact</td>
+        <td>Address</td>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employee">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.phone}}</td>
+            <td>{{emp.email}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
